@@ -1,7 +1,7 @@
 # Optional
 class Transaction
   def initialize(amount)
-    # Initialize amount and date of transaction
+    @amount = 0
   end
 
   def to_s
