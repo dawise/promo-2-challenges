@@ -1,8 +1,8 @@
 require 'sqlite3'
 
 # opens the database
-DATABASE_PATH = "db/jukebox.sqlite"
-db = SQLite3::Database.new(DATABASE_PATH)
+database_path = File.join(File.dirname(__FILE__), 'db/jukebox.sqlite')
+db = SQLite3::Database.new(database_path)
 
 def number_of_rows(db, table_name)
   #TODO: count number of rows in table table_name
@@ -11,7 +11,8 @@ end
 
 def sorted_artists(db)
   #TODO: return array of artists' names sorted alphabetically
-db.execute "SELECT Name FROM artist OWNER BY Name ASC"
+  db.execute "SELECT Name FROM artist OWNER BY Name ASC"
+
 end
 
 def love_tracks(db)
@@ -25,3 +26,4 @@ def long_tracks(db, min_length)
 end
 
 puts number_of_rows(db, 'Track')
+
