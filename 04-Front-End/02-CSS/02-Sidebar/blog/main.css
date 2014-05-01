@@ -1,6 +1,47 @@
 .container {
-  margin: 0 auto;  
+  margin: 0 auto;
   width: 840px;
 	font-family: 'Open Sans', sans-serif;
 }
 
+nav {height: 66px;
+  width: 120px;
+  border-top: 1px solid #808080;
+  padding:20px 000;
+  float: left;
+  display: block;
+}
+
+nav li {
+
+  list-style-type: none;
+  padding: 0;
+}
+
+.content {
+height: 1692px;
+width: 679px;
+border-top: 1px solid #808080;
+border-left: 1px solid #808080;
+float: right;
+display: block;
+padding-left: 2px;
+}
+
+footer {
+height: 22px;
+width: 780px;
+border-top: 1px solid #808080;
+padding:30px 30px 30px 30px;
+clear: both;
+}
+
+.post { height: 850px;
+  width: 679px;
+display: block;
+}
+
+p {
+  margin: 16px 0 16px 0;
+  display: block;
+}
