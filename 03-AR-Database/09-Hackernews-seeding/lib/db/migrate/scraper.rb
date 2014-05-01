@@ -1,0 +1,6 @@
+#Scraper
+
+require 'open'
+
+
+html
