@@ -1,0 +1,49 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Wagon race</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+  </head>
+  <body>
+
+    <div id="player_name">
+
+    <form role="form">
+  <div class="form-group">
+    <label for="player_name">Player 1</label>
+    <input type="email" class="form-control" id="player_name" placeholder="Enter your player name">
+     <label for="player_name">Player 2</label>
+    <input type="email" class="form-control" id="player_name" placeholder="Enter your player name">
+  </div>
+  </form>
+
+  <button type="button" class="btn btn-primary">Let's Go</button>
+    <div class="players hide">
+      <div id="player1_hint"></div>
+      <div id="player2_hint"></div>
+    </div>
+
+    <table class="racer_table hide">
+      <tr id="player1_race">
+        <td class="active"></td>
+      </tr>
+      <tr id="player2_race">
+        <td class="active"></td>
+      </tr>
+    </table>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../js/wagon-race.js"></script>
+  </body>
+</html>
